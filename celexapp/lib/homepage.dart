@@ -191,10 +191,80 @@ class _HomePageState extends State<HomePage> {
                         height: 200,
                         width: double.infinity,
                         color: Colors.grey.shade200,
-                        //  alignment: Alignment.center,
+                        alignment: Alignment.topCenter,
                         child: Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Text('Order Id: ${index + 1}'),
+                          padding: const EdgeInsets.only(bottom: 20.0),
+                          child: Column(
+                            children: [
+                              Text("Premier Honda"),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 40),
+                                    child: Text(
+                                        'Consignment Number: ${index + 1}'),
+                                  ),
+
+                                  /* SizedBox(
+                                    width: 50,
+                                  ), */
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: .0),
+                                    child: Container(
+                                        height: 20,
+                                        color: Colors.grey,
+                                        child: Text("Quantity:2 ")),
+                                  ),
+                                  Container(
+                                      color: Colors.red, child: Text("W:7.89"))
+                                ],
+                              ),
+                              SizedBox(
+                                height: 30,
+                              ),
+                              Flexible(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(8),
+                                  child: Container(
+                                      // height: 20,
+                                      color: Colors.black26,
+                                      child: Text(
+                                        "Salt Lake , Sector-5, Bidhanagar\n,",
+                                        style: TextStyle(color: Colors.black),
+                                        overflow: TextOverflow.ellipsis,
+                                        maxLines: 3,
+                                      )),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              ElevatedButton(
+                                onPressed: () {},
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.red, // Fill color
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 60,
+                                      vertical: 10), // Button size
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(
+                                        5), // Rounded corners
+                                  ),
+                                ),
+                                child: Text(
+                                  "Pick up",
+                                  style: TextStyle(
+                                    color: Colors.white, // Text color
+                                    fontSize: 16, // Text size
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
