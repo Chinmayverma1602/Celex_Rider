@@ -1,3 +1,4 @@
+import 'package:celexapp/Meter_reading.dart';
 import 'package:celexapp/Profile/profile_details.dart';
 import 'package:celexapp/Trip_details.dart';
 import 'package:celexapp/barcode_scanner.dart';
@@ -212,7 +213,8 @@ class _HomePageState extends State<HomePage>
                   ),
                 ),
                 onTap: () {
-                  Navigator.of(context).pop();
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => MeterRedings()));
                 },
               ),
               Divider(
@@ -314,7 +316,7 @@ class HomePageScreen extends StatelessWidget {
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(

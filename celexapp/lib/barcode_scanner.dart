@@ -42,8 +42,7 @@ class _BarcodeScannerScreenState extends State<BarcodeScannerScreen> {
       });
 
       // Handle barcode validation here (compare with widget.shipmentId)
-      if (widget.shipmentId != null &&
-          barcode.toLowerCase() == widget.shipmentId.toLowerCase()) {
+      if (barcode.toLowerCase() == widget.shipmentId.toLowerCase()) {
         // Barcode matched, send back result to previous screen
         Navigator.pop(context, barcode);
       } else {

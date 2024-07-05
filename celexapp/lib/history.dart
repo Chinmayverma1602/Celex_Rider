@@ -205,14 +205,6 @@ class _HistoryState extends State<History> {
                             ],
                           ),
                           SizedBox(height: 5),
-                          /*   Text(
-                            'Dropoff Location: 289, ShantiPally, KASBA Kolkata 700107', // Adjusted text here
-                            style: GoogleFonts.poppins(
-                              fontSize: 15, // Larger font size for name
-                              fontWeight: FontWeight.w600, // Bold weight
-                              //  color: Colors.blue, // Blue color
-                            ),
-                          ), */
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [

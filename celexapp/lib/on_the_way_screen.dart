@@ -6,7 +6,7 @@ class OnTheWayScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        'No orders on the way.',
+        'No oders are on the way',
         style: GoogleFonts.poppins(
           fontSize: 16,
           fontWeight: FontWeight.bold,
