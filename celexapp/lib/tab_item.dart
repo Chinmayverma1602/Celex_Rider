@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TabItem extends StatelessWidget {
   final String title;
@@ -14,6 +15,11 @@ class TabItem extends StatelessWidget {
           Text(
             title,
             overflow: TextOverflow.ellipsis,
+            style: GoogleFonts.poppins(
+              fontSize: 12,
+              color: Colors.black,
+              fontWeight: FontWeight.w500,
+            ),
           ),
           count > 0
               ? Container(
@@ -26,9 +32,9 @@ class TabItem extends StatelessWidget {
                   child: Center(
                     child: Text(
                       count > 9 ? "9+" : count.toString(),
-                      style: const TextStyle(
-                        color: Colors.black54,
+                      style: GoogleFonts.poppins(
                         fontSize: 10,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   ),

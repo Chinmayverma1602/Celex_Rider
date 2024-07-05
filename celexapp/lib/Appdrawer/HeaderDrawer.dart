@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HeaderDrawer extends StatelessWidget {
   final ValueNotifier<bool> onlineStatus;
@@ -38,10 +39,9 @@ class HeaderDrawer extends StatelessWidget {
           SizedBox(width: 16.0),
           Text(
             'Sourav Das',
-            style: TextStyle(
-              color: Colors.black87, // Adjust the text color if needed
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
+            style: GoogleFonts.poppins(
+              fontSize: 20,
+              fontWeight: FontWeight.w900,
             ),
           ),
         ],
