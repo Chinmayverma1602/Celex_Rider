@@ -44,6 +44,7 @@ class HeaderDrawer extends StatelessWidget {
               fontWeight: FontWeight.w900,
             ),
           ),
+          Divider(),
         ],
       ),
     );

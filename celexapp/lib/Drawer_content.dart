@@ -14,33 +14,11 @@ class _DrawerState extends State<Drawer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // color: Colors.deepPurple.shade200,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          colors: [
-            Colors.orange.shade700,
-            Colors.orange.shade600,
-            Colors.orange.shade200,
-          ],
-        ),
-      ),
       child: ListView(
         children: [
           HeaderDrawer(
             onlineStatus: _onlineStatus,
           ),
-/*               DrawerHeader(
-                  child: Center(
-                      child: Text(
-                'L O G O',
-                style: TextStyle(
-                  fontSize: 35,
-                ),
-              )
-              )
-              ), */
-              
           ListTile(
             leading: Icon(Icons.home),
             title: Text(

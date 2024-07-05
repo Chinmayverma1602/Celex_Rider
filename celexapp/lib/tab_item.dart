@@ -42,7 +42,7 @@ class TabItem extends StatelessWidget {
               : const SizedBox(
                   width: 0,
                   height: 0,
-                )
+                ),
         ],
       ),
     );
